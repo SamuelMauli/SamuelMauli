@@ -1,6 +1,6 @@
 <h1 align="center">👨‍💻 Samuel Mauli</h1>
 <p align="center">
-  <strong>Backend Developer | Criptografia | IA & Machine Learning</strong>
+  <strong>Full-Stack Developer</strong>
 </p>
 <p align="center">
   <img alt="GitHub followers" src="https://img.shields.io/github/followers/SamuelMauli?style=for-the-badge">
@@ -82,9 +82,12 @@ Confira alguns dos meus projetos e repositórios no [GitHub](https://github.com/
   <a href="https://github.com/SamuelMauli">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
+    <a href="https://samuelmauli.github.io/portifolio/">
+    <img src="https://img.shields.io/badge/Portifólio-blue" alt="Portifólio" />
+  </a>
 </p>
 <p align="center">
-  📧 **samuel.mauli@gmail.com** | 📞 **+55 (47) 99277-0701**
+  📧 samuel.mauli@gmail.com | 📞 +55 (47) 99277-0701
 </p>
 
 ---
