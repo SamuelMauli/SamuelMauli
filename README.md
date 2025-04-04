@@ -1,10 +1,6 @@
 <h1 align="center">👨‍💻 Samuel Mauli</h1>
 <p align="center">
-  <strong>Full-Stack Developer</strong>
-</p>
-<p align="center">
-  <img alt="GitHub followers" src="https://img.shields.io/github/followers/SamuelMauli?style=for-the-badge">
-  <img alt="Repository stars" src="https://img.shields.io/github/stars/SamuelMauli?style=for-the-badge">
+  <strong>Backend Developer</strong>
 </p>
 
 ---
@@ -79,19 +75,11 @@ Confira alguns dos meus projetos e repositórios no [GitHub](https://github.com/
   <a href="https://www.linkedin.com/in/samuelmauli/">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://github.com/SamuelMauli">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
-    <a href="https://samuelmauli.github.io/portifolio/">
-    <img src="https://img.shields.io/badge/Portifólio-blue" alt="Portifólio" />
-  </a>
+  <a href="[https://github.com/SamuelMauli](https://samuelmauli.github.io/portifolio/)">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="Portifólio" />
 </p>
 <p align="center">
   📧 samuel.mauli@gmail.com | 📞 +55 (47) 99277-0701
 </p>
 
 ---
-
-<div align="center">
-  <img src="https://media.tenor.com/2PVH7hArX-0AAAAj/totoro-jumping.gif" alt="Totoro" width="150" />
-</div>
