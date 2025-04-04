@@ -75,8 +75,8 @@ Confira alguns dos meus projetos e repositórios no [GitHub](https://github.com/
   <a href="https://www.linkedin.com/in/samuelmauli/">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="[https://github.com/SamuelMauli](https://samuelmauli.github.io/portifolio/)">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="Portifólio" />
+  <a href="https://samuelmauli.github.io/portifolio/">
+    <img src="https://img.shields.io/badge/Portif%C3%B3lio-0077B5?style=for-the-badge&logo=chrome&logoColor=white" alt="Portifólio" />
 </p>
 <p align="center">
   📧 samuel.mauli@gmail.com | 📞 +55 (47) 99277-0701
