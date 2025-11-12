@@ -1,6 +1,6 @@
 <h1 align="center">👨‍💻 Samuel Mauli</h1>
 <p align="center">
-  <strong>Backend Developer</strong>
+  <strong>Full-Stack Developer</strong>
 </p>
 
 ---
