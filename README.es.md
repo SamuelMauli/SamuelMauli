@@ -39,7 +39,7 @@ No escribo software genérico: cada producto de abajo carga la norma, el organis
 
 ## En producción
 
-Productos que arquitecté, construí y mantengo en pie — diez propios, más las plataformas que lidero en Grupo Negócios Públicos.
+Veintidós sistemas en producción hoy: el catálogo propio de Doublethree más las plataformas que lidero en Grupo Negócios Públicos. Doce de ellos en detalle abajo.
 
 ### Agronegocio y ESG
 
@@ -157,7 +157,7 @@ Productos que arquitecté, construí y mantengo en pie — diez propios, más la
 2022–2023   Soporte N1 · ICI Curitiba — Municipalidad de Curitiba, NOC y campo
 ```
 
-Trilingüe: portugués, inglés y español.
+Trilingüe: portugués, inglés y español — con software en producción en Brasil, España y México.
 
 ---
 

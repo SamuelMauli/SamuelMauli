@@ -39,7 +39,7 @@ I don't write generic software: every product below carries the regulation, the 
 
 ## In production
 
-Products I architected, built and keep running — ten proprietary ones, plus the platforms I lead at Grupo Negócios Públicos.
+Twenty-two systems in production today: the proprietary Doublethree catalogue plus the platforms I lead at Grupo Negócios Públicos. Twelve of them in detail below.
 
 ### Agribusiness and ESG
 
@@ -157,7 +157,7 @@ Products I architected, built and keep running — ten proprietary ones, plus th
 2022–2023   N1 Support · ICI Curitiba — City of Curitiba, NOC and field teams
 ```
 
-Trilingual: Portuguese, English and Spanish.
+Trilingual: Portuguese, English and Spanish — with software running in production in Brazil, Spain and Mexico.
 
 ---
 
