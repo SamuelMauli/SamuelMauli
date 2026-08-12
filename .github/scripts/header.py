@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Gera o header SVG do perfil — tipografia convertida em path, temas dark e light.
+"""Gera o header SVG do perfil — 3 idiomas x 2 temas, tipografia convertida em path.
 
     pip install fonttools && python3 .github/scripts/header.py
 
@@ -10,9 +10,10 @@ carrega webfont externa, entao o texto precisa virar geometria.
 import os
 import subprocess
 import sys
+
+from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.ttLib import TTFont
 from fontTools.varLib.instancer import instantiateVariableFont
-from fontTools.pens.svgPathPen import SVGPathPen
 
 CACHE = {}
 
@@ -68,7 +69,7 @@ SYNE = fetch("syne.ttf", f"{GF}/syne/Syne%5Bwght%5D.ttf")
 MONO = fetch("jbmono.ttf", f"{GF}/jetbrainsmono/JetBrainsMono%5Bwght%5D.ttf")
 
 W, H = 1000, 330
-ACCENT_BY_THEME = {"dark": "#E8FF47", "light": "#9FB300"}  # mesma familia, contraste real nos dois fundos
+ACCENT_BY_THEME = {"dark": "#E8FF47", "light": "#9FB300"}  # mesma familia, contraste real
 
 THEMES = {
     "dark": dict(bg="#080808", ink="#F5F5F5", dim="#8A8A8A", rule="#FFFFFF", rule_o=0.10),
@@ -76,50 +77,80 @@ THEMES = {
 }
 
 # —— composição ——————————————————————————————————————————————
-# escala extrema: wordmark 94px contra legenda 10.5px (≈9x)
+# escala extrema: wordmark 94px contra legenda 10px (≈9x)
 PAD_L = 56
 BASE1, BASE2 = 180, 268          # duas linhas do wordmark
 OVERLINE_Y = 84
-RAIL_X = 728                    # régua vertical: quebra o eixo, não centraliza
+RAIL_X = 728                     # régua vertical: quebra o eixo, não centraliza
 
-MET = [  # dado exato sempre em mono, número contra legenda minúscula
-    ("10", "PRODUTOS PRÓPRIOS EM PRODUÇÃO"),
-    ("06", "APPS PUBLICADOS NAS LOJAS"),
-    ("20", "PROCESSOS · 8 NEGÓCIOS · 1 VPS"),
-]
+LANGS = {
+    "pt": dict(
+        place="CURITIBA, BR",
+        claim="PLATAFORMAS SaaS DE PONTA A PONTA",
+        role="full-stack · arquitetura de plataforma · SRE",
+        alt="Samuel Mauli — full-stack, arquitetura de plataforma, SRE",
+        met=[
+            ("12", "SISTEMAS EM PRODUÇÃO"),
+            ("08", "CLIENTES E NEGÓCIOS"),
+            ("02", "PAÍSES · BRASIL E ESPANHA"),
+            ("06", "APPS NAS DUAS LOJAS"),
+        ],
+    ),
+    "en": dict(
+        place="CURITIBA, BRAZIL",
+        claim="END-TO-END SaaS PLATFORMS",
+        role="full-stack · platform architecture · SRE",
+        alt="Samuel Mauli — full-stack, platform architecture, SRE",
+        met=[
+            ("12", "SYSTEMS IN PRODUCTION"),
+            ("08", "CLIENTS AND BUSINESSES"),
+            ("02", "COUNTRIES · BRAZIL, SPAIN"),
+            ("06", "APPS ON BOTH STORES"),
+        ],
+    ),
+    "es": dict(
+        place="CURITIBA, BR",
+        claim="PLATAFORMAS SaaS DE PUNTA A PUNTA",
+        role="full-stack · arquitectura de plataforma · SRE",
+        alt="Samuel Mauli — full-stack, arquitectura de plataforma, SRE",
+        met=[
+            ("12", "SISTEMAS EN PRODUCCIÓN"),
+            ("08", "CLIENTES Y NEGOCIOS"),
+            ("02", "PAÍSES · BRASIL Y ESPAÑA"),
+            ("06", "APPS EN LAS DOS TIENDAS"),
+        ],
+    ),
+}
 
 
-def build(theme_name):
+def build(theme_name, lang):
     t = THEMES[theme_name]
+    L = LANGS[lang]
     ACCENT = ACCENT_BY_THEME[theme_name]
-    out = []
 
-    over, ow = text_path(MONO, 500, "CURITIBA, BR", 12.5, PAD_L, OVERLINE_Y, tracking=0.14)
+    over, ow = text_path(MONO, 500, L["place"], 12.5, PAD_L, OVERLINE_Y, tracking=0.14)
     over2, _ = text_path(
-        MONO, 500, "PLATAFORMAS SaaS DE PONTA A PONTA", 12.5, PAD_L + ow + 26, OVERLINE_Y,
-        tracking=0.14,
+        MONO, 500, L["claim"], 12.5, PAD_L + ow + 26, OVERLINE_Y, tracking=0.14
     )
 
-    # distâncias de entrada deliberadamente irregulares (2.7 / -2.0 / 4.3rem)
+    # distâncias de entrada deliberadamente irregulares (2.7 / -2rem)
     w1, w1w = text_path(SYNE, 800, "SAMUEL", 94, PAD_L, BASE1, tracking=-0.035)
     w2, w2w = text_path(SYNE, 800, "MAULI", 94, PAD_L, BASE2, tracking=-0.035)
-    dot, dw = text_path(SYNE, 800, ".", 94, PAD_L + w2w + 2, BASE2, tracking=0)
+    dot, _ = text_path(SYNE, 800, ".", 94, PAD_L + w2w + 2, BASE2, tracking=0)
 
-    role, _ = text_path(
-        MONO, 400, "full-stack · arquitetura de plataforma · SRE", 14, PAD_L + 3, 308, tracking=0.02
-    )
+    role, _ = text_path(MONO, 400, L["role"], 14, PAD_L + 3, 308, tracking=0.02)
 
     mets = []
-    for i, (num, label) in enumerate(MET):
-        y = 132 + i * 66
-        n, _nw = text_path(MONO, 600, num, 32, RAIL_X + 26, y, tracking=-0.02)
-        lb, _ = text_path(MONO, 400, label, 10.5, RAIL_X + 26, y + 17, tracking=0.09)
+    for i, (num, label) in enumerate(L["met"]):
+        y = 122 + i * 52
+        n, _nw = text_path(MONO, 600, num, 26, RAIL_X + 26, y, tracking=-0.02)
+        lb, _ = text_path(MONO, 400, label, 10, RAIL_X + 26, y + 15, tracking=0.09)
         mets.append(
             f'<g class="m" style="--i:{i}"><g fill="{t["ink"]}">{n}</g>'
             f'<g fill="{t["dim"]}">{lb}</g></g>'
         )
 
-    out.append(f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="Samuel Mauli — full-stack, arquitetura de plataforma, SRE">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="{L["alt"]}">
 <defs>
   <clipPath id="c1"><rect x="{PAD_L - 4}" y="{BASE1 - 88}" width="{w1w + 24:.0f}" height="100"/></clipPath>
   <clipPath id="c2"><rect x="{PAD_L - 4}" y="{BASE2 - 88}" width="{w2w + 90:.0f}" height="100"/></clipPath>
@@ -131,10 +162,10 @@ def build(theme_name):
 <style>
   /* frames a 30fps — nada de duração redonda */
   .w, .m, .ov, .rl {{ animation-fill-mode: both; animation-timing-function: cubic-bezier(0.52,0,0.48,1); }}
-  .w  {{ animation: slide 1.667s; }}          /* 50 frames */
+  .w  {{ animation: slide 1.667s; }}                /* 50 frames */
   #w1 {{ animation-delay: .033s; --dx: 2.7rem; }}   /* 1 frame  */
   #w2 {{ animation-delay: .133s; --dx: -2rem; }}    /* 4 frames */
-  .ov {{ animation: rise .933s .2s; }}         /* 28 / 6 frames */
+  .ov {{ animation: rise .933s .2s; }}              /* 28 / 6 frames */
   .rl {{ animation: grow 1.2s .333s; transform-origin: {RAIL_X}px 88px; }}
   .m  {{ animation: rise .8s calc(.466s + var(--i) * .133s); }}
   @keyframes slide {{ from {{ transform: translateX(var(--dx)); }} to {{ transform: none; }} }}
@@ -161,15 +192,15 @@ def build(theme_name):
 
 <line class="rl" x1="{RAIL_X}" y1="88" x2="{RAIL_X}" y2="286" stroke="{t["rule"]}" stroke-opacity="{t["rule_o"]}" stroke-width="1"/>
 {"".join(mets)}
-</svg>''')
-
-    return "\n".join(out)
+</svg>'''
 
 
 if __name__ == "__main__":
     os.makedirs(OUT_DIR, exist_ok=True)
-    for name in THEMES:
-        path = os.path.join(OUT_DIR, f"header-{name}.svg")
-        with open(path, "w", encoding="utf-8") as fh:
-            fh.write(build(name))
-        print("ok", os.path.relpath(path, ROOT))
+    for lang in LANGS:
+        for theme in THEMES:
+            suffix = "" if lang == "pt" else f"-{lang}"
+            path = os.path.join(OUT_DIR, f"header{suffix}-{theme}.svg")
+            with open(path, "w", encoding="utf-8") as fh:
+                fh.write(build(theme, lang))
+            print("ok", os.path.relpath(path, ROOT))
