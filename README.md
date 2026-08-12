@@ -1,255 +1,103 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:58a6ff&height=220&section=header&text=Samuel%20Mauli&fontSize=55&fontColor=58a6ff&animation=fadeIn&fontAlignY=35&desc=Full-Stack%20Developer%20%7C%20AI%20Engineer%20%7C%20Cloud%20Architect&descSize=18&descAlignY=55&descColor=8b949e"/>
-
-<div align="center">
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=600&height=70&lines=%F0%9F%9A%80+Building+scalable+systems+with+AI+%26+Cloud;%F0%9F%8C%8D+Trilingual+Developer+%7C+PT+%F0%9F%87%A7%F0%9F%87%B7+EN+%F0%9F%87%BA%F0%9F%87%B8+ES+%F0%9F%87%AA%F0%9F%87%B8;%E2%9A%A1+From+backend+to+mobile%2C+end-to-end+solutions)](https://git.io/typing-svg)
-
-<a href="https://samuelmauli.github.io/portifolio/"><img src="https://img.shields.io/badge/Portfolio-58a6ff?style=for-the-badge&logo=googlechrome&logoColor=white"/></a>
-<a href="https://www.linkedin.com/in/samuelmauli/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-<a href="mailto:samuel.mauli@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-<img src="https://komarev.com/ghpvc/?username=SamuelMauli&color=58a6ff&style=for-the-badge&label=PROFILE+VIEWS"/>
-
-</div>
-
----
-
-## `> whoami` 🧑‍💻
-
-```yaml
-name: Samuel Mauli
-location: Curitiba, PR 🇧🇷
-role: Full-Stack Developer @ Grupo Negócios Públicos (Vanlink)
-languages: [Português 🇧🇷, English 🇺🇸, Español 🇪🇸]
-currently:
-  - Leading SGI & CRM platform architecture
-  - Building AI-powered automation pipelines
-  - Orchestrating payment gateways & messaging APIs
-  - Managing AWS infrastructure & CI/CD
-interests: [AI/ML, Cryptography, Distributed Systems, Chess Engines]
-fun_fact: "Built a Lava Lamp cryptographic entropy generator in Rust 🌋🔐"
-```
-
----
-
-## 🛠️ Arsenal Tecnológico
-
-<details open>
-<summary><b>⚡ Languages</b></summary>
-<br>
-<p align="center">
-<img src="https://skillicons.dev/icons?i=java,python,go,rust,php,ts,js,cpp,dart,kotlin,swift&perline=11" />
-</p>
-</details>
-
-<details open>
-<summary><b>🧰 Frameworks & Libraries</b></summary>
-<br>
-<p align="center">
-<img src="https://skillicons.dev/icons?i=spring,laravel,react,nextjs,vue,nodejs,flask,flutter,hibernate,jquery&perline=10" />
-</p>
-</details>
-
-<details open>
-<summary><b>🧠 AI / ML & Data</b></summary>
-<br>
-<p align="center">
-<img src="https://skillicons.dev/icons?i=tensorflow,pytorch,opencv&perline=8" />
-&nbsp;&nbsp;
-<img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white"/>
-<img src="https://img.shields.io/badge/LLMs-412991?style=for-the-badge&logo=openai&logoColor=white"/>
-<img src="https://img.shields.io/badge/NLP-4285F4?style=for-the-badge&logo=google&logoColor=white"/>
-<img src="https://img.shields.io/badge/Computer%20Vision-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white"/>
-</p>
-</details>
-
-<details open>
-<summary><b>☁️ Cloud & DevOps</b></summary>
-<br>
-<p align="center">
-<img src="https://skillicons.dev/icons?i=aws,docker,kubernetes,git,linux,nginx,redis,rabbitmq&perline=8" />
-</p>
-</details>
-
-<details open>
-<summary><b>🗄️ Databases</b></summary>
-<br>
-<p align="center">
-<img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb&perline=5" />
-&nbsp;&nbsp;
-<img src="https://img.shields.io/badge/PostGIS-4169E1?style=for-the-badge&logo=postgresql&logoColor=white"/>
-<img src="https://img.shields.io/badge/Amazon%20Redshift-8C4FFF?style=for-the-badge&logo=amazon-redshift&logoColor=white"/>
-</p>
-</details>
-
----
-
-## 🚀 Projetos em Destaque
-
-<div align="center">
-
-<table>
-<tr>
-<td width="50%">
-
-### 🧪 BlauSight
-**Motor Preditivo de Qualidade**
-> ML para indústria farmacêutica — identifica falhas em linhas de produção, categoriza anomalias e gera planos corretivos automatizados. Chatbot IA com criptografia E2E.
-
-`Machine Learning` `Flask` `React` `AWS`
-
-</td>
-<td width="50%">
-
-### ☀️ Solar Hub
-**Gestão de Energia Solar**
-> Plataforma B2C para usinas solares: monitoramento em tempo real, dashboard admin, hub de benefícios e faturamento automatizado com gateways de pagamento.
-
-`React` `Flutter` `Node.js` `Cooperativa`
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### 🌐 GeoTrack
-**Geoprocessamento Real-Time**
-> Microserviço em Go para rastreamento geoespacial — centenas de usuários via WebSocket, 100+ motoristas simultâneos, baixa latência e alta concorrência.
-
-`Go` `WebSocket` `Redis` `PostGIS`
-
-</td>
-<td width="50%">
-
-### ♟️ Quimera
-**Chess AI Engine**
-> Motor de xadrez com busca minimax, poda alfa-beta e redes neurais para avaliação posicional. Milhões de posições/segundo em C++.
-
-`C++` `Neural Networks` `Algorithms`
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### 🔐 Rust LavaLamp
-**Entropia Criptográfica**
-> Inspirado no LavaRand da Cloudflare — processamento de imagens para entropia verdadeiramente aleatória. Segurança de memória e performance bare-metal.
-
-`Rust` `Cryptography` `Image Processing`
-
-</td>
-<td width="50%">
-
-### 🤟 LibrasNow
-**IA Assistiva em Tempo Real**
-> Tradução de linguagem de sinais → texto via Edge Computing. Processamento de gestos em tempo real eliminando barreiras de acessibilidade.
-
-`Python` `Edge AI` `OpenCV`
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### 📚 EduStack
-**Ecossistema EdTech**
-> LMS gamificado com XP, rankings, dashboards de desempenho, recomendações personalizadas e e-commerce integrado com checkout próprio.
-
-`React` `Laravel` `MySQL` `Gamificação`
-
-</td>
-<td width="50%">
-
-### 🏢 SecureGate
-**Governança de Acessos**
-> Controle de segurança perimetral com reconhecimento facial, credenciamento digital, validação de NF-e e gestão de facilities em tempo real.
-
-`Laravel` `Python` `OpenCV` `Segurança`
-
-</td>
-</tr>
-</table>
-
-</div>
-
----
-
-## 💼 Trajetória Profissional
-
-```
-2025 — Presente  ⬤  Desenvolvedor Pleno @ Grupo Negócios Públicos (Vanlink)
-                     ├─ Arquitetura SGI/CRM + Orquestração de APIs
-                     ├─ Microsserviços: PHP, Go, Python, Node.js
-                     └─ IA + Visão Computacional + LLMs
-
-2024 — Presente  ⬤  Developer & Consultor @ Doublethree
-                     ├─ Motor de IA para indústria química (PLN + ML)
-                     ├─ Visão Computacional + Apps Mobile
-                     └─ LMS, Controle de Acesso, Geoprocessamento
-
-2024 — 2025      ⬤  Java & PHP Developer @ Meisters Solutions
-                     ├─ Spring Boot + Laravel (APIs RESTful)
-                     ├─ BlauSight (IA Generativa) + Ballesol CareAI
-                     └─ Pipelines ETL/ELT para setor farmacêutico
-
-2023 — 2024      ⬤  Agente de Suporte TI @ Positivo Tecnologia
-2023             ⬤  Consultor Oracle @ TRI CS Inc.
-2022 — 2023      ⬤  Técnico de Suporte N1 @ ICI Curitiba
-```
-
----
-
-## 📊 GitHub Analytics
-
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=SamuelMauli&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=c9d1d9&ring_color=58a6ff&count_private=true"/>
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SamuelMauli&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&langs_count=10"/>
-
-<img width="90%" src="https://github-readme-streak-stats.herokuapp.com?user=SamuelMauli&theme=github-dark-blue&hide_border=true&background=0D1117&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF"/>
-
-<img width="90%" src="https://github-readme-activity-graph.vercel.app/graph?username=SamuelMauli&bg_color=0d1117&color=58a6ff&line=58a6ff&point=c9d1d9&area=true&area_color=58a6ff&hide_border=true"/>
-
-</div>
-
-<div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=SamuelMauli&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=10"/>
-</div>
-
----
-
-## 🐍 Contribution Snake
-
-<div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SamuelMauli/SamuelMauli/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/SamuelMauli/SamuelMauli/output/github-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/SamuelMauli/SamuelMauli/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="./.github/assets/header-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./.github/assets/header-light.svg">
+  <img alt="Samuel Mauli — full-stack, arquitetura de plataforma, SRE" src="./.github/assets/header-dark.svg" width="100%">
 </picture>
-</div>
+
+**[Portfólio](https://samuelmauli.github.io/portifolio/)** · [LinkedIn](https://www.linkedin.com/in/samuelmauli/) · [samuel.mauli@gmail.com](mailto:samuel.mauli@gmail.com) · Curitiba, PR · PT / EN / ES
+
+---
+
+Levo produto do desenho à produção — e depois mantenho no ar.
+
+Escolho a linguagem pelo problema, não pela moda: **Go** onde idempotência e concorrência importam (orquestração bancária, faturamento), **Python** onde o ecossistema de dados e ML manda (PostGIS, XGBoost, vLLM), **Node/TypeScript** onde o time inteiro compartilha tipo com o front. No mobile, **React Native** e **Flutter**, com seis apps publicados nas duas lojas — incluindo os casos difíceis: APNs direto quando o Firebase corrompeu no iOS, build assinado sem pipeline gerenciado.
+
+Aplico IA onde ela resolve algo mensurável, e de preferência **dentro do perímetro do cliente**: embeddings multilíngues em ONNX Runtime no próprio processo Node, LLM servido por vLLM on-premise, XGBoost com SHAP obrigatório quando a decisão vai para auditoria.
+
+Também sou o SRE da própria operação: migrei tudo de EC2 para VPS, hoje ~20 processos de oito negócios atrás de Caddy, com Prometheus/Grafana/Loki e **PITR provado** — restore parou a `1,2s` do alvo, RTO medido em `38min`. Backup sem restore testado eu não chamo de backup.
+
+---
+
+## Stack
+
+| Camada | Ferramentas |
+|---|---|
+| **Linguagens** | Go · TypeScript · Python · Java · PHP · Dart · Rust · C++ · Kotlin · Swift · SQL |
+| **Backend** | NestJS · Node · FastAPI · Flask · Spring Boot · Hibernate/JPA · Laravel · Slim · Go (hexagonal, River) |
+| **Front-end** | Next.js · React · Vue · Tailwind · Turborepo · PWA · Vite |
+| **Mobile** | React Native (bare + Expo Router) · Flutter · SwiftUI · Jetpack Compose · APNs · FCM · ASC API + Play Developer API |
+| **Dados** | PostgreSQL · PostGIS · pgvector · MySQL · MongoDB · Redis · DuckDB · Redshift · Prisma · Drizzle · Airflow |
+| **IA / ML** | XGBoost · LightGBM · SHAP · scikit-learn · TensorFlow · PyTorch · OpenCV · ONNX Runtime · vLLM · Ollama · BGE-M3 · RAG (BM25 + embeddings) · Claude / GPT / Gemini / Groq |
+| **Infra / SRE** | Docker · Kubernetes e k3s · Caddy · Nginx · PM2 · GitHub Actions · AWS · Cloudflare · Prometheus · Grafana · Loki · Alertmanager · PITR |
+| **Integrações** | PIX · CNAB 240 · mTLS · SFTP · Asaas · Stripe · Banco Inter · RabbitMQ · WebSocket · ICP-Brasil A1 · DataJud/CNJ · PNCP / Comprasnet |
+| **Qualidade** | Playwright · Jest · Vitest · pytest · JUnit |
+
+---
+
+## Em produção
+
+Dez produtos proprietários que arquitetei, construí e mantenho no ar.
+
+| Produto | O que resolve | Stack | Escala |
+|---|---|---|---|
+| **Terra-fy** | Certificado socioambiental de imóvel rural cruzando a geometria do CAR contra nove bases federais. PDF assinado com ICP-Brasil A1, QR e hash verificáveis, em menos de 5 min após o pagamento. | FastAPI · PostGIS · MapLibre · pyHanko | `65k` linhas · cobertura nacional |
+| **Licitaqui** | Agente que lê os editais publicados no Brasil e entrega só os que a empresa pode ganhar, citando o trecho literal que prova cada afirmação. Análise jurídica multi-passe e jurisprudência do TCU. | Next.js · pgvector · Playwright · LLM on-prem | `79k` linhas · 51 entidades · 68 rotas |
+| **Wave Energia** | Energia por assinatura: app nas duas lojas mais a API da operação. Três integrações de distribuidora capturando fatura por contingência. | React Native · Node.js · AWS | `184k` linhas · iOS + Android |
+| **OnMe** | Saúde mental corporativa em três superfícies sobre um backend só. Embeddings rodam em ONNX dentro do processo Node — nenhuma chamada a IA de terceiro. COPSOQ III, plano de ação na NR-01. | NestJS · React Native · ONNX Runtime | `96k` linhas · 4 peças |
+| **PaymentsHub** | Orquestrador de pagamento bancário em escala: pré-validação no banco, aprovação humana com RBAC, PIX REST ou lote CNAB 240 por SFTP auditado. Idempotência por pagamento, mTLS por conexão. | Go · PostgreSQL · River · MinIO | 21 tabelas · 50 rotas |
+| **Lexis Predict** | Risco processual para provisão contábil sob CPC 25 / IAS 37 com IA 100% on-premise. SHAP obrigatório; confiança abaixo de `0,70` vai para revisão humana. | Python · XGBoost · vLLM · k3s | `50k` linhas |
+| **Lexis Vault** | O extrato fala em ID de depósito, o tribunal fala em nº de processo — o Vault amarra os dois. CNAB 240 por SFTP, DataJud/CNJ e PROJUDI, motor de conciliação em quatro camadas. | FastAPI · Airflow · Kubernetes | 21 tabelas |
+| **Aportia** | Monitora fontes de capital e fomento e calcula score de fit explicável critério a critério. BYOK: a chave de LLM é do cliente, a análise nunca sai da conta dele. | Next.js · Prisma · BM25 + embeddings | 28 entidades · 50 rotas |
+| **LogiSentry** | Agendamento de caminhão, visitante e sala numa portaria só, com PWA de totem no tablet da recepção. | Turborepo · NestJS · Next.js · Stripe | 20 entidades · 35 telas · 5 idiomas |
+| **AmperCondo** | Acaba com rateio de energia por fração ideal: medidor por unidade, cobrança individual com baixa automática. Multi-tenant por schema, faturamento idempotente. | Go (hexagonal) · PostgreSQL · Asaas | 15 tabelas · event bus |
+| **Cadência** | CRM móvel white-label nas duas lojas: cada agência entra pelo próprio subdomínio, com a própria marca. | React Native · Expo Router · NestJS | 29 telas · 9 domínios |
+| **Vanlink** | Dois apps Flutter de transporte escolar em produção — pais e condutores. Tracking em tempo real, gate de consentimento LGPD servido pelo backend, geocoding com validação cruzada. | Flutter · APNs · FCM | 2 apps · App Store + Play |
+
+**Infra que sustenta tudo:** um VPS de 8 vCPU / 32 GB, ~20 processos de oito negócios atrás de Caddy com wildcard por DNS-01, observabilidade completa e PITR provado.
+
+---
+
+## No GitHub
+
+| Repositório | |
+|---|---|
+| [**Quimera**](https://github.com/SamuelMauli/Quimera) | Engine de xadrez em C++ com modelagem preditiva do oponente |
+| [**Rust-LavaLamp**](https://github.com/SamuelMauli/Rust-LavaLamp) | Entropia criptográfica por imagem, na linha do LavaRand da Cloudflare |
+| [**GreenChain**](https://github.com/SamuelMauli/GreenChain-Backend) | Rastreabilidade blockchain + geoprocessamento para conformidade EUDR ([front](https://github.com/SamuelMauli/GreenChain-Frontend)) |
+| [**Curitiba-Verde**](https://github.com/SamuelMauli/Curitiba-Verde) | Mapeamento de desmatamento por visão computacional e NDVI |
+| [**LibrasNow**](https://github.com/SamuelMauli/LibrasNow) | Tradução de língua de sinais em tempo real na borda |
+| [**wselect-pro**](https://github.com/SamuelMauli/wselect-pro) | LMS em produção, `106k` linhas, deploy por GitHub Actions |
+| [**EBANX Take-Home**](https://github.com/SamuelMauli/EBANX-Take-Home-API) | API bancária em PHP 8.2 + Slim 4 |
+
+---
+
+## Trajetória
+
+```
+2025 →      Desenvolvedor Pleno · Grupo Negócios Públicos (Vanlink)
+            SGI + CRM, dois apps Flutter nas lojas, orquestração de pagamento,
+            extração documental com LLM: 8 min → 10 s por documento
+
+2024 →      Developer & Consultor · Doublethree
+            Dez produtos proprietários do desenho à produção, seis apps nas lojas,
+            migração AWS → VPS e a operação inteira em pé
+
+2024–2025   Java & PHP Developer · Meisters Solutions
+            Spring Boot e Laravel, pipelines ETL/ELT para farmacêutica,
+            BlauSight (IA generativa) e Ballesol CareAI
+
+2023–2024   Agente de Suporte TI · Positivo Tecnologia — ITIL, SLA, backlog da IMC
+2023        Consultor Oracle · TRI CS Inc. — OIC, BI Publisher, REST/SOAP
+2022–2023   Suporte N1 · ICI Curitiba — Prefeitura de Curitiba, NOC e campo
+```
 
 ---
 
 <div align="center">
-
-### 💬 Random Dev Quote
-
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark"/>
-
+<img height="150" alt="" src="https://github-readme-stats.vercel.app/api?username=SamuelMauli&show_icons=true&hide_border=true&hide_title=true&bg_color=00000000&icon_color=9FB300&text_color=8A8A8A&ring_color=9FB300&count_private=true&include_all_commits=true"/>
+<img height="150" alt="" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SamuelMauli&layout=compact&hide_border=true&hide_title=true&bg_color=00000000&text_color=8A8A8A&langs_count=8"/>
 </div>
 
 ---
 
-<div align="center">
-
-**📫 Vamos construir algo extraordinário juntos?**
-
-<a href="mailto:samuel.mauli@gmail.com"><img src="https://img.shields.io/badge/samuel.mauli@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-<a href="https://www.linkedin.com/in/samuelmauli/"><img src="https://img.shields.io/badge/in/samuelmauli-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-<a href="https://github.com/SamuelMauli"><img src="https://img.shields.io/badge/SamuelMauli-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
-
-<br><br>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:58a6ff&height=100&section=footer"/>
-
-</div>
+Aberto a projeto desafiador e parceria — [samuel.mauli@gmail.com](mailto:samuel.mauli@gmail.com)
