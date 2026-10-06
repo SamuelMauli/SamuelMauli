@@ -8,16 +8,9 @@
 
 **[Portafolio](https://samuelmauli.github.io/portifolio/)** · [LinkedIn](https://www.linkedin.com/in/samuelmauli/) · [samuel.mauli@gmail.com](mailto:samuel.mauli@gmail.com) · Curitiba, Brasil
 
-<p>
-  <img alt="22 sistemas en producción" src="https://img.shields.io/badge/22-sistemas_en_producción-E8FF47?style=flat-square&labelColor=080808">
-  <img alt="6 apps en dos tiendas" src="https://img.shields.io/badge/6-apps_·_2_tiendas-E8FF47?style=flat-square&labelColor=080808">
-  <img alt="8 negocios, 3 países" src="https://img.shields.io/badge/8_negocios-3_países-E8FF47?style=flat-square&labelColor=080808">
-  <img alt="RTO medido 38 minutos" src="https://img.shields.io/badge/RTO-38min_·_PITR_probado-E8FF47?style=flat-square&labelColor=080808">
-</p>
-
 ---
 
-Llevo producto del diseño a producción — y después lo mantengo en pie. Elijo lenguaje por el problema: **Go** donde la idempotencia y concurrencia pesan (pago, facturación), **Python** donde mandan datos y ML (PostGIS, XGBoost, vLLM), **Node/TypeScript** donde front y back comparten tipo. IA sólo donde mueve número — y de preferencia **dentro del perímetro del cliente** (ONNX en proceso, vLLM on-premise, BYOK). Y soy el SRE de la propia operación: EC2 → VPS, ~20 procesos detrás de Caddy, observabilidad completa y restore probado, no presumido.
+Llevo producto del diseño a producción — y después lo mantengo en pie. Elijo lenguaje por el problema: **Go** donde la idempotencia y concurrencia pesan (pago, facturación), **Python** donde mandan datos y ML (PostGIS, XGBoost, vLLM), **Node/TypeScript** donde front y back comparten tipo. IA sólo donde mueve número — y de preferencia **dentro del perímetro del cliente** (ONNX en proceso, vLLM on-premise, BYOK). Y opero lo que construyo: observabilidad completa y restore probado, no presumido.
 
 ## Resultados que entregué
 
@@ -51,55 +44,17 @@ No escribo software genérico: cada producto carga la norma, el órgano y el voc
 
 ## En producción
 
-**22 sistemas en pie** — el catálogo propio de **Doublethree** y las plataformas que lidero en Grupo Negócios Públicos. Los principales:
-
-**Agro/ESG · Terra-fy** — cruza la geometría del CAR contra 9 bases federales y emite certificado firmado con ICP-Brasil A1, verificable por QR y hash. Desbloquea crédito rural, M&A y la exigencia europea (EUDR).
-`FastAPI` `PostGIS` `MapLibre` `pyHanko`
-
-**Sector público · Licitaqui** — lee todo edital publicado en Brasil, entrega sólo lo que la empresa puede ganar y **cita el fragmento literal** que prueba cada exigencia. Decisión de participar en minutos.
-`Next.js` `pgvector` `Playwright` `LLM on-prem`
-
-**Sector público · Aportia** — monitorea fuentes de capital y fomento y devuelve **score de fit explicable, criterio a criterio**. BYOK: el análisis nunca sale de la cuenta del cliente.
-`Next.js` `Prisma` `BM25 + embeddings`
-
-**Financiero · PaymentsHub** — recibe el lote del ERP, pre-valida en la API del banco, **exige aprobación humana con alçada (RBAC)** y paga por PIX REST o CNAB 240 vía SFTP. Idempotencia por pago, trilha inmutable.
-`Go` `PostgreSQL` `River` `MinIO`
-
-**Jurídico · Lexis Predict** — clasifica riesgo procesal bajo CPC 25 / IAS 37 con **explicación obligatoria por feature (SHAP)**, 100% on-premise. Por debajo de `0,70` de confianza, decide humano.
-`Python` `XGBoost` `vLLM` `k3s`
-
-**Jurídico · Lexis Vault** — amarra depósito judicial y proceso vía CNAB 240, DataJud/CNJ y PROJUDI, y **recupera valor parado y libramiento no cobrado**.
-`FastAPI` `Airflow` `Kubernetes`
-
-**Energía · Wave** — **3 integraciones en contingencia** garantizan captura de factura, con conciliación en lote y lectura de PDF de concesionaria. App en las dos tiendas + API de operación.
-`React Native` `Node.js` `AWS`
-
-**Energía · AmperCondo** — medición individualizada y **cobro por unidad con baja automática** (boleto/PIX). Multi-tenant por schema, facturación idempotente.
-`Go (hexagonal)` `PostgreSQL` `Asaas`
-
-**Salud · OnMe** — mide riesgo psicosocial por **COPSOQ III** y entrega plan de acción en la jerarquía de NR-01. Dato sensible nunca sale: embeddings en ONNX en el propio proceso Node.
-`NestJS` `React Native` `ONNX Runtime`
-
-**Movilidad · Vanlink** — 2 apps Flutter en las tiendas con **seguimiento en tiempo real y consentimiento de LGPD versionado** para menor de edad.
-`Flutter` `APNs` `FCM`
-
-**Industria · LogiSentry** — portería, agendamiento de carga y visitante en un solo flujo, con **PWA de tótem** y trilha auditable. Multi-tenant, 5 idiomas.
-`Turborepo` `NestJS` `Next.js` `Stripe`
-
-**Agencias · Cadência** — CRM móvil **white-label**: cada agencia por su propio subdominio y marca. Pipeline actualizado frente al cliente.
-`React Native` `Expo Router` `NestJS`
-
-> **Infra que sostiene todo:** VPS 8 vCPU / 32 GB · ~20 procesos de 8 negocios detrás de Caddy (wildcard DNS-01) · Prometheus/Grafana/Loki · PITR probado.
+Mantengo sistemas en producción en varios sectores — agro y ESG, sector público, financiero, jurídico, energía, salud ocupacional, movilidad e industria. El trabajo va de APIs y plataformas web a aplicaciones móviles publicadas en las dos tiendas, siempre del diseño a la operación.
 
 ---
 
 ## Principios
 
-- **Dato sensible no sale del perímetro** — modelo local (ONNX, vLLM) o BYOK. Privacidad es arquitectura, no cláusula.
-- **Dinero exige idempotencia y trilha** — ninguna lectura cobrada dos veces, ningún lote pagado dos veces.
-- **Decisión automatizada es auditable** — SHAP en la feature, cita literal del edital, hash offline. Por debajo del umbral, decide humano.
-- **Backup sin restore probado no es backup** — PITR con `recovery_target_time`, RTO medido.
-- **Publicar app es ciclo completo** — bump, build firmado, subida por ASC API / Play Developer API, sin pipeline gestionado en el medio.
+- **Integridad** — hago lo correcto aunque nadie esté mirando, y no prometo lo que no puedo entregar.
+- **Comunicación** — digo temprano lo que sé y lo que no; alinear expectativas es parte del trabajo, no una interrupción.
+- **Transparencia** — muestro el progreso real, incluso lo que salió mal. Sin maquillar el estado.
+- **Compromiso** — soy dueño del resultado, no solo de mi parte; me quedo hasta que la entrega se sostenga sola.
+- **Respeto** — por el tiempo, el contexto y las personas de cada equipo con el que trabajo.
 
 ---
 
@@ -141,8 +96,8 @@ No escribo software genérico: cada producto carga la norma, el órgano y el voc
             extracción documental con LLM: 8 min → 10 s por documento
 
 2024 →      Developer & Consultor · Doublethree
-            22 sistemas en producción, 6 apps en las tiendas,
-            migración AWS → VPS y la operación entera en pie
+            Productos propietarios del diseño a la producción,
+            apps publicadas en las tiendas
 
 2024–2025   Java & PHP Developer · Meisters Solutions
             Spring Boot y Laravel, ETL/ELT para farmacéutica,
